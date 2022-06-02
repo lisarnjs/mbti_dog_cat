@@ -1,6 +1,2 @@
-# my foundation 
-- react
-- typescript
-- eslint
-- prettier
-- stylelint
+# MBTI 유형별 강아지 고양이 알아보기
+
