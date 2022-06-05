@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body,
+button,
+input,
+textarea {
+  font-family: 'Do Hyeon', 'Hi Melody', 'Noto Sans KR', sans-serif;
+  font-feature-settings: 'tnum';
+}
+
+input[type='number'] {
+  font-feature-settings: 'tnum';
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+}
