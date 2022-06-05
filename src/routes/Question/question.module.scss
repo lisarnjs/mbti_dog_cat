@@ -1,0 +1,16 @@
+@use '/src/styles/constants/colors';
+
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.choiceBtn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  margin: 20px auto;
+  background-color: colors.$CAT_BG_COLOR;
+  border-radius: 10px;
+}
