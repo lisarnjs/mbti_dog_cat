@@ -1,8 +1,10 @@
 import { PadLogo } from 'assets'
 import { Link, Outlet } from 'react-router-dom'
+import { InitMbti } from 'utils/mbtiResults'
 import styles from './cover.module.scss'
 
 const Cover = () => {
+  InitMbti()
   return (
     <div className={styles.cover}>
       <div className={styles.coverInner}>

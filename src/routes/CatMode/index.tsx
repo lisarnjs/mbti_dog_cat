@@ -1,12 +1,13 @@
 import { CatImage } from 'assets'
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { InitMbti } from 'utils/mbtiResults'
 import styles from './catMode.module.scss'
 
 const CatMode = () => {
-  const navigate = useNavigate()
+  InitMbti()
   return (
     <div className={styles.catMode}>
-      <div className={styles.catModeInner}>
+      <div>
         <header>
           <CatImage />
           <h1>냥BTI</h1>
