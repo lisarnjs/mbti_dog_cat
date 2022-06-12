@@ -1,14 +1,14 @@
 import { PadLogo } from 'assets'
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
-import { useRecoilState } from 'recoil'
+import { Link } from 'react-router-dom'
+import { useSetRecoilState } from 'recoil'
 import { modeState } from 'utils/atoms'
 import { InitMbti } from 'utils/mbtiResults'
 import styles from './cover.module.scss'
 
 const Cover = () => {
   InitMbti()
-  const [mode, setMode] = useRecoilState(modeState)
+  const setMode = useSetRecoilState(modeState)
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     setMode(e.currentTarget.id)
   }

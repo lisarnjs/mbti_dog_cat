@@ -1,6 +1,5 @@
 import styles from './results.module.scss'
 import { mbti } from 'utils/mbtiResults'
-import { useState } from 'react'
 import catData from 'assets/data/catData.json'
 
 interface myMbtiProps {
