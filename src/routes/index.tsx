@@ -6,6 +6,7 @@ import DogMode from './DogMode'
 import styles from './routes.module.scss'
 import Layout from './_shared/Layout'
 import Results from './Results'
+import Chart from './Chart'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='question' element={<Question />}>
             <Route path='results' element={<Results />} />
           </Route>
+          <Route path='chart' element={<Chart />} />
         </Route>
       </Routes>
     </div>

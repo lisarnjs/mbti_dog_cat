@@ -1,10 +1,13 @@
 import { CatImage } from 'assets'
-import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { useRecoilValue } from 'recoil'
+import { modeState } from 'utils/atoms'
 import { InitMbti } from 'utils/mbtiResults'
 import styles from './catMode.module.scss'
 
 const CatMode = () => {
   InitMbti()
+  const mode = useRecoilValue(modeState)
   return (
     <div className={styles.catMode}>
       <div>
